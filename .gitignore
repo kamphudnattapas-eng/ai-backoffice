@@ -1,0 +1,35 @@
+# Secrets and local config
+.env
+.env.*
+!.env.example
+.claude/settings.local.json
+CLAUDE.local.md
+
+# Real customer data stays out of git (docs/EVALS.md, docs/SECURITY.md)
+data/
+evals/golden/private/
+
+# Tool state
+.aider*
+.claude/worktrees/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.hypothesis/
+
+# Node
+node_modules/
+.next/
+.pnpm-store/
+
+# OS and editor
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# .scratch/ holds tickets and specs, so it is tracked on purpose
